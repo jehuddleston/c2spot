@@ -1,0 +1,1 @@
+cmd_Release/obj.target/auth.node := g++ -o Release/obj.target/auth.node -shared -pthread -rdynamic -m64 -L/usr/lib -Lnode_modules/node-libcurl  -Wl,-soname=auth.node -Wl,--start-group Release/obj.target/auth/auth/auth.o Release/obj.target/auth/auth/exports.o -Wl,--end-group -lcurl

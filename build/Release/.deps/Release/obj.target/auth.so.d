@@ -1,0 +1,1 @@
+cmd_Release/obj.target/auth.so := g++ -o Release/obj.target/auth.so -shared -pthread -rdynamic -m64 -Wl,-rpath=\$$ORIGIN/ -Wl,-rpath-link=\./Release/ -L/usr/lib -Lnode_modules/node-libcurl  -Wl,-soname=auth.so -Wl,--whole-archive ./Release/obj.target/auth/auth/auth.o ./Release/obj.target/auth/auth/exports.o ./Release/obj.target/util.so -Wl,--no-whole-archive -lcurl

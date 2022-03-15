@@ -1,0 +1,1 @@
+cmd_Release/obj.target/c2spot.node := g++ -o Release/obj.target/c2spot.node -shared -pthread -rdynamic -m64 -Wl,-rpath=\$$ORIGIN/ -Wl,-rpath-link=\./Release/ -L/usr/lib -Lnode_modules/node-libcurl  -Wl,-soname=c2spot.node -Wl,--start-group Release/obj.target/c2spot/c2spot.o Release/obj.target/auth.so Release/obj.target/util.so -Wl,--end-group -lcurl

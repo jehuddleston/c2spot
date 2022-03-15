@@ -1,0 +1,1 @@
+cmd_Release/obj.target/util.node := g++ -o Release/obj.target/util.node -shared -pthread -rdynamic -m64 -L/usr/lib -Lnode_modules/node-libcurl  -Wl,-soname=util.node -Wl,--start-group Release/obj.target/util/util/base64.o Release/obj.target/util/util/request.o Release/obj.target/util/util/cJSON.o -Wl,--end-group -lcurl

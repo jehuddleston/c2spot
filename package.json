@@ -1,0 +1,53 @@
+{
+  "name": "c2spot",
+  "version": "1.0.0",
+  "description": "Spotify api wrapper in c",
+  "main": "c2spot.c",
+  "scripts": {
+    "test": "nyc mocha ./test",
+    "lint": "eslint .",
+    "lint-fix": "npm run lint --fix",
+    "pretest": "npm run lint"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "nan": "^2.15.0",
+    "node-libcurl": "^2.3.4"
+  },
+  "gypfile": true,
+  "devDependencies": {
+    "chai": "^4.3.6",
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "mocha": "^9.2.1",
+    "nyc": "^15.1.0",
+    "sinon": "^13.0.1"
+  },
+  "eslintConfig": {
+    "extends": [
+      "eslint:recommended",
+      "google"
+    ],
+    "env": {
+      "node": true
+    },
+    "parserOptions": {
+      "ecmaVersion": 6
+    },
+    "rules": {
+      "max-len": [
+        2,
+        120,
+        4,
+        {
+          "ignoreUrls": true
+        }
+      ],
+      "no-console": 0
+    }
+  },
+  "eslintIgnore": [
+    "node_modules"
+  ]
+}

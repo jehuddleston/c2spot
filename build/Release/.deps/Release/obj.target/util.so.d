@@ -1,0 +1,1 @@
+cmd_Release/obj.target/util.so := g++ -o Release/obj.target/util.so -shared -pthread -rdynamic -m64 -L/usr/lib -Lnode_modules/node-libcurl  -Wl,-soname=util.so -Wl,--whole-archive ./Release/obj.target/util/util/base64.o ./Release/obj.target/util/util/request.o ./Release/obj.target/util/util/cJSON.o -Wl,--no-whole-archive -lcurl
